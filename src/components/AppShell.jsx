@@ -41,7 +41,7 @@ function AppShell() {
 
       {/* Sidebar */}
       <aside 
-        className={`fixed left-0 top-0 h-full flex flex-col z-40 bg-[#101c2e]/95 backdrop-blur-2xl shadow-2xl shadow-teal-900/40 font-headline font-medium text-lg w-72 transition-transform duration-300 border-r border-white/5 overflow-y-auto ${
+        className={`fixed left-0 top-0 h-full flex flex-col z-40 bg-[#101c2e]/90 backdrop-blur-md shadow-2xl shadow-teal-900/10 font-headline font-medium text-lg w-72 transition-transform duration-300 border-r border-white/5 overflow-y-auto ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
         }`}
       >
@@ -91,8 +91,8 @@ function AppShell() {
       <main className="flex-1 lg:ml-72 min-h-screen relative flex flex-col pt-16 lg:pt-0">
         <Outlet />
         {/* Float Decoration Elements */}
-        <div className="fixed -bottom-20 -right-20 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
-        <div className="fixed top-1/2 -left-40 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
+        <div className="fixed -bottom-20 -right-20 w-[400px] h-[400px] bg-teal-500/3 rounded-full blur-[80px] pointer-events-none z-0"></div>
+        <div className="fixed top-1/2 -left-40 w-[300px] h-[300px] bg-primary/3 rounded-full blur-[70px] pointer-events-none z-0"></div>
       </main>
     </div>
   );

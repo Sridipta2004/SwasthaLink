@@ -21,8 +21,8 @@
     color: #d7e3fc;
     font-family: "Inter", "Noto Sans Bengali", sans-serif;
     background-color: #071325;
-    background-image: radial-gradient(circle at top right, #14b8a615, transparent),
-      radial-gradient(circle at bottom left, #071325, #004d4d20);
+    background-image: radial-gradient(circle at top right, #14b8a608, transparent),
+      radial-gradient(circle at bottom left, #071325, #004d4d10);
   }
 
   ::selection {
@@ -35,10 +35,10 @@
 }
 
 .glass-card {
-  background: rgb(255 255 255 / 0.05);
+  background: rgb(255 255 255 / 0.03);
   -webkit-backdrop-filter: blur(40px);
-  backdrop-filter: blur(40px);
-  border: 1px solid rgb(255 255 255 / 0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgb(255 255 255 / 0.04);
 }
 
 .ethereal-bg {

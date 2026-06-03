@@ -114,7 +114,7 @@ function DetailedClarityHubPage() {
         <div className="space-y-4">
           <span className="text-primary font-bold tracking-widest uppercase text-xs">Clarity Hub</span>
           <div className="flex flex-col gap-0.5">
-            <h2 className="text-5xl font-headline font-extrabold tracking-tight text-white leading-tight">Welcome back, Rahat.</h2>
+            <h2 className="text-5pxl font-headline font-extrabold tracking-tight text-white leading-tight">Welcome back, Rahat.</h2>
             <span className="text-3xl text-teal-400/80 font-headline font-medium">আবার স্বাগতম, রাহাত।</span>
           </div>
         </div>
@@ -132,20 +132,20 @@ function DetailedClarityHubPage() {
       </header>
 
       {/* Balanced Grid Layout */}
-      <div className="grid grid-cols-12 gap-8">
+      <div className="grid grid-cols-12 gap-6">
         {/* Left: Today's Treatment Plan (More Prominent) */}
-        <section className="col-span-12 lg:col-span-8 flex flex-col gap-8">
-          <div className="glass-card rounded-3xl p-10 relative overflow-hidden group border border-white/5">
+        <section className="col-span-12 lg:col-span-8 flex flex-col gap-6">
+          <div className="glass-card rounded-3xl p-8 relative overflow-hidden group border border-white/5">
             {/* Ambient Glow Decoration */}
             <div className="absolute -top-32 -right-32 w-80 h-80 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
             <div className="relative z-10">
-              <div className="flex justify-between items-center mb-10">
+              <div className="flex justify-between items-center mb-6">
                 <div className="flex flex-col gap-0.5">
                   <h3 className="text-3xl font-headline font-bold text-white">Today's Treatment Plan</h3>
                   <p className="text-lg text-outline">আপনার আজকের চিকিৎসা পরিকল্পনা</p>
                 </div>
                 <button className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300 shadow-xl shadow-primary/5 group/speaker relative">
-                  <span className="absolute inset-0 rounded-2xl bg-primary animate-ping opacity-10 group-hover:hidden"></span>
+                  <span className="absolute inset-0 rounded-2xl bg-primary opacity-10 group-hover:hidden"></span>
                   <span className="material-symbols-outlined text-3xl">volume_up</span>
                 </button>
               </div>
@@ -215,7 +215,7 @@ function DetailedClarityHubPage() {
         </section>
 
         {/* Right: Staggered Widgets (Hydration & Heart) */}
-        <section className="col-span-12 lg:col-span-4 flex flex-col gap-8">
+        <section className="col-span-12 lg:col-span-4 flex flex-col gap-6">
           {/* Hydration Goal (Top Staggered Widget) */}
           <div className="glass-card rounded-3xl p-8 flex flex-col items-center text-center relative group border border-white/5">
             <div className="absolute top-6 right-6">
@@ -276,7 +276,7 @@ function DetailedClarityHubPage() {
       {/* Floating Voice Assistant */}
       <div className="fixed bottom-5 right-5 sm:bottom-8 sm:right-8 z-50 flex flex-col items-end gap-4">
         <div
-          className={`w-[min(420px,calc(100vw-1.5rem))] h-[min(620px,calc(100vh-7rem))] rounded-[2rem] border border-teal-300/20 bg-gradient-to-b from-[#0b1c2c]/95 via-[#10263a]/95 to-[#0a1a2a]/95 shadow-[0_24px_80px_rgba(20,184,166,0.35)] backdrop-blur-2xl overflow-hidden transition-all duration-500 ${
+          className={`w-[min(420px,calc(100vw-1.5rem))] h-[min(620px,calc(100vh-7rem))] rounded-[2rem] border border-teal-300/20 bg-gradient-to-b from-[#0b1c2c]/95 via-[#10263a]/95 to-[#0a1a2a]/95 shadow-[0_12px_40px_rgba(20,184,166,0.15)] backdrop-blur-xl overflow-hidden transition-all duration-500 ${
             isVoicePanelOpen
               ? "translate-y-0 opacity-100 scale-100 pointer-events-auto"
               : "translate-y-8 opacity-0 scale-95 pointer-events-none"
@@ -406,7 +406,7 @@ function DetailedClarityHubPage() {
           className="relative w-20 h-20 rounded-full bg-gradient-to-br from-teal-300 via-teal-400 to-cyan-500 text-[#043437] shadow-[0_20px_40px_rgba(20,184,166,0.4)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all border-4 border-surface"
           aria-label="Toggle voice assistant"
         >
-          <span className="absolute inset-0 rounded-full border-4 border-teal-200/35 animate-ping"></span>
+          <span className="absolute inset-0 rounded-full border-4 border-teal-200/35"></span>
           <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>
             {isVoicePanelOpen ? "graphic_eq" : "record_voice_over"}
           </span>
